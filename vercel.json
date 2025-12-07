@@ -1,0 +1,12 @@
+{
+  "buildCommand": "cd 'Client-2 Containers' && npm install && npm run build",
+  "outputDirectory": "Client-2 Containers/dist",
+  "installCommand": "cd 'Client-2 Containers' && npm install",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

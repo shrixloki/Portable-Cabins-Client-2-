@@ -1,18 +1,22 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-cabin.jpg";
 
 export function HeroSection() {
   return (
     <section className="relative bg-neutral-50 overflow-hidden min-h-screen">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0 w-full h-full">
-        <img
-          src={heroImage}
-          alt="Portable Cabin"
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-full object-cover"
-        />
+        >
+          <source src="/hero-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/40" />
       </div>
